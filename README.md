@@ -18,11 +18,12 @@ This project implements a backend system for a food delivery application, includ
 ```bash
 npm install
 
-## Create a .env file with the following:
 
+## Create a .env file with the following:
 
 JWT_SECRET=<your_jwt_secret>
 MONGODB_URI=<your_mongodb_uri>
+
 
 ## Start the server:
 
