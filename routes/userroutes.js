@@ -5,8 +5,8 @@ const {
   updatePasswordController,
   resetPasswordController,
   deleteProfileController,
-} = require("../controllers/userController");
-const authMiddleware = require("../middlewares/authMiddleware");
+} = require("../controller/usercontroller");
+const authMiddleware = require("../middleware/authmiddleware");
 
 const router = express.Router();
 

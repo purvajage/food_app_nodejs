@@ -14,7 +14,7 @@ const
 const adminmiddleware=require("../middleware/adminmiddleware");
 const router=express.Router();
 //CREATE FOOD
-router.post("/create", authMiddleware, createFoodController);
+router.post("/create", authmiddleware, createFoodController);
 
 //GET ALL FOOD
 router.get("/getAll", getAllFoodsController);
@@ -26,19 +26,19 @@ router.get("/get/:id", getSingleFoodController);
 router.get("/getByResturant/:id", getFoodByResturantController);
 
 // UPDATE FOOD
-router.put("/update/:id", authMiddleware, updateFoodController);
+router.put("/update/:id", authmiddleware, updateFoodController);
 
 // DELETE FOOD
-router.delete("/delete/:id", authMiddleware, deleteFoodController);
+router.delete("/delete/:id", authmiddleware, deleteFoodController);
 
 // PLACE ORDER
-router.post("/placeorder", authMiddleware, placeOrderController);
+router.post("/placeorder", authmiddleware, placeOrderController);
 
 // ORDER STATUS
 router.post(
   "/orderStatus/:id",
-  authMiddleware,
-  adminMiddleware,
+  authmiddleware,
+  adminmiddleware,
   orderStatusController
 );
 

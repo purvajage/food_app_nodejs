@@ -6,7 +6,7 @@ const {
   getAllResturantController,
   getResturantByIdController,
   deleteResturantController,
-} = require("../controller/resturantcontroller");
+} = require("../controller/resturentcontroller");
 
 const router = express.Router();
 
